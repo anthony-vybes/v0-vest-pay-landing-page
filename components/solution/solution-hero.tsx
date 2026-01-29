@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Zap, GitBranch } from "lucide-react";
+import { ArrowRight, Shield, Zap, GitBranch, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function SolutionHero() {
@@ -26,7 +26,7 @@ export function SolutionHero() {
         </div>
 
         {/* Key value props */}
-        <div className="mt-20 grid md:grid-cols-3 gap-8 pt-12 border-t border-border">
+        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-12 border-t border-border">
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0 h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center">
               <Shield className="h-6 w-6 text-accent" />
@@ -57,6 +57,17 @@ export function SolutionHero() {
               <h3 className="font-semibold text-foreground mb-1">Flexible splits</h3>
               <p className="text-sm text-muted-foreground">
                 Configure complex disbursement rules with our visual editor or API
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center">
+              <RotateCcw className="h-6 w-6 text-accent" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-foreground mb-1">Refunds & Chargebacks</h3>
+              <p className="text-sm text-muted-foreground">
+                Automated dispute handling and refund orchestration across all parties
               </p>
             </div>
           </div>
